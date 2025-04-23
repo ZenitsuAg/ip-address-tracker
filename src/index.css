@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-rubik: "Rubik", serif;
+
+    --color-very-dark-grey: hsl(0, 0%, 17%);
+    --color-dark-grey: hsl(0, 0%, 59%);
+}
+
+.leaflet-container {
+    flex: 1;
+}
