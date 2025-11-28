@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/ip-address-tracker-with-react-tailwindcss-swr-vite-leaflet-and-ipify-EtddDirAxO)
 - Live Site URL: [Vercel](https://ip-tracker-pied-seven.vercel.app/)
 
 ## My process
