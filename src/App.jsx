@@ -12,8 +12,8 @@ function App() {
     function useIpify() {
         const { data } = useSWR(
             trigger
-            ? `https://geo.ipify.org/api/v2/country,city?apiKey=at_8KaX4LwutCt36W8ku92leYw4DzcbZ&ipAddress=${trigger}`
-            : `https://geo.ipify.org/api/v2/country,city?apiKey=at_8KaX4LwutCt36W8ku92leYw4DzcbZ&ipAddress`
+            ? `https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_APIKEY}&ipAddress=${trigger}`
+            : `https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_APIKEY}&ipAddress`
             , fetcher
         );
 
@@ -60,7 +60,7 @@ function App() {
                     }   
                 </div>
 
-                <div id='map' className="map w-full relative mt-16 flex-1 flex"> {/** flex-1 so that it takes up the remaining space */}
+                <div id='map' className="map w-full relative mt-18 flex-1 flex max-h-px"> {/** flex-1 so that it takes up the remaining space */}
                     {data && data.ip != undefined && (
                         <MapContainer center={[data.location.lat, data.location.lng]} zoom={13} scrollWheelZoom={false}>
                         <TileLayer
